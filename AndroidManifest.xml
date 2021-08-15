@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="b3nac.injuredandroid" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_activity_flag_seventeen" android:name="b3nac.injuredandroid.FlagSeventeenActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_c_s_p_bypass" android:name="b3nac.injuredandroid.CSPBypassActivity" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="b3nac.com" android:pathPattern="/.*/" android:scheme="http"/>
+                <data android:host="b3nac.com" android:pathPattern="/.*/" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_assembly" android:name="b3nac.injuredandroid.AssemblyActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:hardwareAccelerated="true" android:name="io.flutter.embedding.android.FlutterActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/title_activity_rce" android:name="b3nac.injuredandroid.RCEActivity" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:label="filter_view_flag11">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="rce" android:scheme="flag13"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="b3nac.injuredandroid.SettingsActivity"/>
+        <activity android:exported="true" android:label="@string/title_activity_exported_protected_intent" android:name="b3nac.injuredandroid.ExportedProtectedIntent" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="true" android:name="b3nac.injuredandroid.QXV0aA"/>
+        <activity android:label="@string/title_activity_flag_twelve_protected" android:name="b3nac.injuredandroid.FlagTwelveProtectedActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_deep_link" android:name="b3nac.injuredandroid.DeepLinkActivity">
+            <intent-filter android:label="filter_view_flag11">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="flag11"/>
+            </intent-filter>
+            <intent-filter android:label="filter_view_flag11">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_flag_ten_unicode" android:name="b3nac.injuredandroid.FlagTenUnicodeActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_flag_one_login" android:name="b3nac.injuredandroid.FlagOneLoginActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_flag_nine_firebase" android:name="b3nac.injuredandroid.FlagNineFirebaseActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_flag_eight_login" android:name="b3nac.injuredandroid.FlagEightLoginActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_flag_seven_sqlite" android:name="b3nac.injuredandroid.FlagSevenSqliteActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_flags_overview" android:name="b3nac.injuredandroid.FlagsOverview" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_flag_six_login" android:name="b3nac.injuredandroid.FlagSixLoginActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="b3nac.injuredandroid.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="b3nac.injuredandroid.XSSTextActivity"/>
+        <activity android:name="b3nac.injuredandroid.DisplayPostXSS"/>
+        <activity android:name="b3nac.injuredandroid.FlagOneSuccess"/>
+        <activity android:exported="true" android:name="b3nac.injuredandroid.b25lActivity"/>
+        <activity android:label="@string/title_activity_flag_two" android:name="b3nac.injuredandroid.FlagTwoActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_flag_three" android:name="b3nac.injuredandroid.FlagThreeActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_flag_four" android:name="b3nac.injuredandroid.FlagFourActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <receiver android:exported="true" android:name="b3nac.injuredandroid.FlagFiveReceiver"/>
+        <activity android:label="@string/title_activity_flag_five" android:name="b3nac.injuredandroid.FlagFiveActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="true" android:label="@string/title_activity_test_broadcast_reciever" android:name="b3nac.injuredandroid.TestBroadcastReceiver" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="b3nac.injuredandroid.ContactActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.FederatedSignInActivity" android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <provider android:authorities="b3nac.injuredandroid.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest>
