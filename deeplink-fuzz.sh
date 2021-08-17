@@ -16,7 +16,7 @@ exported_activity_commands () {
           fuzz_string=$(echo "💩" | radamsa)
           exported_activity_command="adb shell \"am start -n $android_app_package_name/$pleasework -e test '$fuzz_string'\""
           echo $exported_activity_command
-          adb shell "am start -n '$android_app_package_name/$pleasework -e test '$fuzz_string'"
+          adb shell "am start -n $android_app_package_name/$pleasework -e test '$fuzz_string'"
       done
   done
 }
